@@ -1,0 +1,63 @@
+[
+  {
+    "id": "fast_pitch",
+    "title": "30-sec Consultation",
+    "subtitle": "The best 3 demos in order",
+    "emoji": "⚡️",
+    "description": "Use this when the customer says: “Just tell me what’s best.”",
+    "demos": [
+      {
+        "id": "ar-split",
+        "type": "splitCompare",
+        "title": "1) Clear Vision (Anti-Reflection)",
+        "caption": "Less glare. Eyes look clearer. Night driving feels easier.",
+        "before": "assets/ar_before.jpg",
+        "after": "assets/ar_after.jpg"
+      },
+      {
+        "id": "polar-split",
+        "type": "splitCompare",
+        "title": "2) Outdoor Comfort (Polarized)",
+        "caption": "Cuts harsh glare from roads, water, and dashboards.",
+        "before": "assets/polar_before.jpg",
+        "after": "assets/polar_after.jpg"
+      },
+      {
+        "id": "uv-demo",
+        "type": "photochromic",
+        "title": "3) One Pair Solution (Photochromic)",
+        "caption": "Clear indoors. Dark outdoors. Great for daily wear."
+      }
+    ]
+  },
+  {
+    "id": "coatings",
+    "title": "Coatings",
+    "subtitle": "Cleaner lenses • better durability",
+    "emoji": "✨",
+    "description": "Show what each layer does. Customers understand the value instantly.",
+    "demos": [
+      {
+        "id": "coat-stack",
+        "type": "coatingToggles",
+        "title": "Coating Stack Builder",
+        "caption": "Toggle layers and explain benefits in simple terms."
+      }
+    ]
+  },
+  {
+    "id": "thickness",
+    "title": "Lens Thickness",
+    "subtitle": "Index options made simple",
+    "emoji": "📏",
+    "description": "Quick visual thickness estimate based on power and material index.",
+    "demos": [
+      {
+        "id": "thick-demo",
+        "type": "thicknessCalculator",
+        "title": "Thickness Estimator",
+        "caption": "Visual estimate for consultation (not clinical)."
+      }
+    ]
+  }
+]
