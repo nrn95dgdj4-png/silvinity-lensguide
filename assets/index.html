@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B1220" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Silvinity LensGuide</title>
+
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">S</div>
+      <div>
+        <div class="title">Silvinity LensGuide</div>
+        <div class="subtitle">Quick demos. Clear decisions.</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <label class="toggle">
+        <input id="customerMode" type="checkbox" />
+        <span>Customer Mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="searchRow">
+      <input id="search" class="search" placeholder="Search demos (coatings, polarization, photochromic...)" />
+      <button id="homeBtn" class="btn ghost hidden">Home</button>
+    </section>
+
+    <section id="screenHome" class="screen">
+      <div id="moduleGrid" class="grid"></div>
+    </section>
+
+    <section id="screenModule" class="screen hidden">
+      <div class="moduleHead">
+        <button id="backBtn" class="btn ghost">← Back</button>
+        <div>
+          <h1 id="moduleTitle"></h1>
+          <p id="moduleDesc" class="muted"></p>
+        </div>
+      </div>
+      <div id="demoList" class="demoList"></div>
+    </section>
+
+    <section id="screenDemo" class="screen hidden">
+      <div class="demoHead">
+        <button id="demoBackBtn" class="btn ghost">← Back</button>
+        <div>
+          <h1 id="demoTitle"></h1>
+          <p id="demoCaption" class="muted"></p>
+        </div>
+      </div>
+      <div id="demoBody"></div>
+    </section>
+
+    <footer class="footer">
+      <span id="offlineStatus" class="pill"></span>
+      <span class="pill subtle">No login • No tracking • Offline</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
